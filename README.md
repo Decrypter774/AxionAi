@@ -1,6 +1,6 @@
 # ⬡ Axion AI
 
-An LLM built **entirely from scratch** in Python. Runs locally on a consumer NVIDIA GPU. It has a custom tokenizer, transformer architecture, training loop, and a live chat web UI. 
+An LLM built **entirely from scratch** in Python. Runs locally on a NVIDIA GPU. It has a tokenizer, transformer architecture, training loop, and a live chat web UI. 
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.6-orange?style=flat-square)
