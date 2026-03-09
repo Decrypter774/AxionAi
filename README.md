@@ -9,7 +9,7 @@ An LLM built **entirely from scratch** in Python. Runs locally on a NVIDIA GPU. 
 ### 1. Clone the repo
 ```bash
 git clone https://github.com/Decrypter774/axionai.git
-cd axion-ai
+cd axionai
 ```
 
 ### 2. Create virtual environment
