@@ -1,0 +1,16 @@
+# Core dependencies
+torch>=2.2.0           # PyTorch with CUDA support (install via pytorch.org)
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Dataset utilities
+datasets>=2.14.0       # HuggingFace datasets (WikiText, Pile, etc.)
+
+# Optional: experiment tracking
+wandb>=0.16.0
+
+# Optional: faster tokenization baseline
+sentencepiece>=0.1.99
+
+# Note: Install PyTorch separately with CUDA support:
+# pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
