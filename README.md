@@ -1,40 +1,11 @@
 # ⬡ Axion AI
 
-A GPT-style large language model built **entirely from scratch** in Python — custom tokenizer, transformer architecture, training loop, and a live chat web UI. Runs locally on a consumer NVIDIA GPU.
+An LLM built **entirely from scratch** in Python. Runs locally on a consumer NVIDIA GPU. It has a custom tokenizer, transformer architecture, training loop, and a live chat web UI. 
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.6-orange?style=flat-square)
 ![CUDA](https://img.shields.io/badge/CUDA-12.4+-green?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-white?style=flat-square)
-
----
-
-## What's inside
-
-Everything is written from scratch — no HuggingFace Transformers, no pre-built model weights.
-
-| File | Description |
-|---|---|
-| `tokenizer.py` | Byte-Pair Encoding (BPE) tokenizer — train, encode, decode |
-| `model.py` | GPT transformer — GQA, RoPE, SwiGLU, Flash Attention |
-| `dataset.py` | Data loading, tokenization pipeline, DataLoader |
-| `train.py` | Training loop — AMP, gradient checkpointing, cosine LR |
-| `generate.py` | Inference — KV-cache, temperature, top-k, top-p sampling |
-| `server.py` | Flask web server with streaming SSE API |
-| `static/index.html` | Axion AI chat UI |
-
----
-
-## Architecture
-
-- **Model:** GPT-style autoregressive transformer
-- **Attention:** Grouped-Query Attention (GQA) + Flash Attention (PyTorch 2.0)
-- **Positional encoding:** Rotary Positional Embeddings (RoPE)
-- **FFN:** SwiGLU activation (LLaMA-style)
-- **Normalization:** RMSNorm (pre-norm)
-- **Precision:** bfloat16 mixed precision training
-- **Parameters:** 16M (small) · 130M (medium) · 350M (large)
-- **Context length:** 1024 tokens
 
 ---
 
@@ -138,6 +109,3 @@ Open **http://localhost:5000**
 
 MIT — do whatever you want with it.
 
----
-
-*Built from scratch. No pretrained weights. No shortcuts.*
