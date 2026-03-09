@@ -1,11 +1,6 @@
-# ⬡ Axion AI
+#Axion AI
 
 An LLM built **entirely from scratch** in Python. Runs locally on a NVIDIA GPU. It has a tokenizer, transformer architecture, training loop, and a live chat web UI. 
-
-![Python](https://img.shields.io/badge/Python-3.13-blue?style=flat-square)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.6-orange?style=flat-square)
-![CUDA](https://img.shields.io/badge/CUDA-12.4+-green?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-white?style=flat-square)
 
 ---
 
@@ -20,10 +15,7 @@ cd axion-ai
 ### 2. Create virtual environment
 ```bash
 python -m venv venv
-# Windows:
 venv\Scripts\Activate.ps1
-# Mac/Linux:
-source venv/bin/activate
 ```
 
 ### 3. Install PyTorch with CUDA
@@ -44,13 +36,6 @@ pip install flask flask-cors
 ---
 
 ## Training
-
-### Quick test (no data needed)
-```bash
-python train.py --config small --batch_size 8 --epochs 5
-```
-
-### Train on TinyStories (recommended)
 ```bash
 python -c "
 from datasets import load_dataset
@@ -97,15 +82,4 @@ Open **http://localhost:5000**
 
 ---
 
-## Requirements
-
-- Python 3.10+
-- NVIDIA GPU with 6GB+ VRAM
-- CUDA 12.4+
-
----
-
-## License
-
-MIT — do whatever you want with it.
 
